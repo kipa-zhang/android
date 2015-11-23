@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/view_paddingBottom"
+    android:paddingLeft="@dimen/view_paddingLeft"
+    android:paddingRight="@dimen/view_paddingRight"
+    android:paddingTop="@dimen/view_paddingTop" >
+
+    <com.st.stchat.widget.CircularImageView
+        android:id="@+id/From_Header"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="4dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/default_nor_man" />
+
+    <TextView
+        android:id="@+id/From_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/From_Header"
+        android:gravity="center"
+        android:text="@string/from_name_"
+        android:textColor="@color/gray"
+        android:textIsSelectable="false"
+        android:textSize="12sp" >
+    </TextView>
+
+    <FrameLayout
+        android:id="@+id/fl_content_receive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/From_Name"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/From_Header"
+>
+
+        <TextView
+            android:id="@+id/From_Content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:maxEms="11"
+            android:text="@string/content_content_content"
+            android:textColor="@color/mytextc"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/text_size_singlechat" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/iv_pic_receive"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+
+            android:maxHeight="85dp"
+            android:maxWidth="85dp"
+            android:scaleType="centerInside"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:text="@string/time"
+            android:textColor="@color/gray"
+            android:textIsSelectable="false"
+            android:textSize="12sp" >
+        </TextView>
+    </FrameLayout>
+
+</RelativeLayout>

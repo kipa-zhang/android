@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/view_paddingBottom"
+    android:paddingLeft="@dimen/view_paddingLeft"
+    android:paddingRight="@dimen/view_paddingRight"
+    android:paddingTop="@dimen/view_paddingTop" >
+
+    <com.st.stchat.widget.CircularImageView
+        android:id="@+id/To_Header"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="4dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/default_nor_man" />
+
+    <FrameLayout
+        android:id="@+id/fl_content_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_toLeftOf="@id/To_Header" >
+
+        <TextView
+            android:id="@+id/To_Content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:maxEms="11"
+            android:text="@string/content_content_content"
+            android:textColor="@color/white"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/text_size_singlechat" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/iv_pic_send"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:maxHeight="85dp"
+            android:maxWidth="85dp"
+            android:scaleType="centerInside"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:text="@string/time"
+            android:textColor="#F0ECE0"
+            android:textIsSelectable="false"
+            android:textSize="12sp" >
+        </TextView>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_statu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@id/fl_content_to"
+        android:padding="2dp"
+        android:text="@string/unknown"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

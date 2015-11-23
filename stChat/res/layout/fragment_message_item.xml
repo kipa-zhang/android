@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="58dp"
+    android:background="@drawable/contact_list_item_bkg"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp" xmlns:app="http://schemas.android.com/apk/res/com.st.stchat">
+
+    <com.st.stchat.widget.CircularImageView
+        android:id="@+id/icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:civ_border="true"
+        android:layout_marginRight="7dp"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icon"
+        android:text="@string/mes_title"
+        android:textColor="@color/mytextc"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/icon"
+        android:layout_alignLeft="@id/title"
+        android:layout_marginBottom="3sp"
+        android:singleLine="true"
+        android:text="@string/mse"
+        android:textColor="@color/grey" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/title"
+        android:text="@string/item_time"
+        android:textColor="@color/grey" />
+
+    <TextView
+        android:id="@+id/unread_chat_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/reddot"
+        android:layout_alignBottom="@id/msg"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/unread_chat_number"
+        android:textColor="@android:color/white"
+        android:textSize="12dip" >
+    </TextView>
+
+</RelativeLayout>

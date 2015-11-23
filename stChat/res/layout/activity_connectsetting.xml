@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mybgc"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        layout="@layout/common_title" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#F0ECE0" >
+    </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="#00000000" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginRight="47dp"
+        android:layout_marginTop="7dp"
+        android:layout_weight="3"
+        android:background="#00000000"
+        android:gravity="center_vertical"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:text="@string/your_ip_address_"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tv_ip"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginRight="47dp"
+        android:layout_weight="3"
+        android:background="#00000000"
+        android:hint="XXX.XXX.XXX.XXX"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/et_ip"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginRight="47dp"
+        android:layout_marginTop="14dp"
+        android:layout_weight="3"
+        android:hint="Set new ip"
+        android:maxLength="15"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:textColorHint="#99C2C1C1" />
+
+    <EditText
+        android:id="@+id/et_port"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginRight="47dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="3"
+        android:hint="Set new port"
+        android:inputType="number"
+        android:maxLength="5"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:textColorHint="#99C2C1C1" />
+
+    <Button
+        android:id="@+id/butt_change"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginRight="47dp"
+        android:layout_marginTop="24dp"
+        android:layout_weight="3"
+        android:background="@drawable/login_btn"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:text="@string/change"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="16" />
+
+</LinearLayout>

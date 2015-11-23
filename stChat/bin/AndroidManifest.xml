@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.st.stchat"
+    android:installLocation="internalOnly"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:name="com.st.stchat.STChatApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.st.stchat.activity.WelcomeActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.st.stchat.activity.MainActivity"
+            android:launchMode="singleTop">
+        </activity>
+        <activity
+            android:name="com.st.stchat.activity.LoginActivity"
+            android:launchMode="singleTop">
+        </activity>
+        <activity
+            android:name="com.st.stchat.activity.RegisterActivity"
+            android:launchMode="singleTop">
+        </activity>
+        <activity
+            android:name="com.st.stchat.activity.ConnectSettingActivity"
+            android:launchMode="singleTop">
+        </activity>
+        <activity
+            android:name="com.st.stchat.activity.SettingActivity"
+            android:launchMode="singleTop">
+        </activity>
+        <activity
+            android:name="com.st.stchat.activity.PersonalProfileActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.st.stchat.activity.NewFriendActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.st.stchat.activity.SingleChatActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden" 
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.st.stchat.activity.PictureSingleChatActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.st.stchat.activity.GroupChatActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+
+        <!-- 联系人服务 -->
+        <!-- <service android:name="com.st.stchat.service.ContactService" > -->
+        <!-- </service> -->
+        <!-- <service android:name="com.st.stchat.service.ChatMsgService" > -->
+        <!-- </service> -->
+
+        <activity
+            android:name="com.st.stchat.activity.AddFriendsActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.st.stchat.activity.ChatRoomListActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.st.stchat.activity.CreateChatRoomGetNameActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.st.stchat.activity.CreateChatRoomActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.st.stchat.activity.AddFriendsSearchActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+
+        <!-- <receiver android:name="com.st.stchat.receiver.BootReceiver" > -->
+        <!-- <intent-filter> -->
+
+
+        <!-- 系统启动完成后会调用 -->
+        <!-- <action android:name="android.intent.action.BOOT_COMPLETED" > -->
+        <!-- </action> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        
+        <service android:name="com.example.testservice1.FirstService"></service>
+    </application>
+
+</manifest>

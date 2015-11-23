@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_singlechat">16sp</dimen>
+    <dimen name="text_padding_singlechat">9dp</dimen>
+    <dimen name="view_paddingTop">5dp</dimen>
+    <dimen name="view_paddingBottom">5dp</dimen>
+    <dimen name="view_paddingLeft">3dp</dimen>
+    <dimen name="view_paddingRight">3dp</dimen>
+    
+    <dimen name="drop_down_list_header_padding_top">12dp</dimen>
+    <dimen name="drop_down_list_header_padding_bottom">15dp</dimen>
+    <dimen name="drop_down_list_header_release_min_distance">20dp</dimen>
+    <dimen name="drop_down_list_header_progress_bar_height">36dp</dimen>
+    <dimen name="drop_down_list_footer_progress_bar_height">36dp</dimen>
+    <dimen name="drop_down_list_footer_button_margin_left">8dp</dimen>
+    <dimen name="drop_down_list_footer_button_height">48dp</dimen>
+
+</resources>

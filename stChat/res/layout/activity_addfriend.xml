@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mybgc"
+    android:orientation="vertical" >
+
+   <include
+        android:layout_width="match_parent"
+       	android:layout_height="54dp"
+        layout="@layout/common_title" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#F0ECE0" >
+    </View>   
+   <ListView
+        android:id="@+id/search_friend_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+        
+        <!-- <EditText
+            android:id="@+id/addUser"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="fill_vertical"
+            android:hint="@string/add_user"
+            android:singleLine="true"
+            android:layout_margin="10dp"
+             android:paddingLeft="10dp" 
+            android:textAppearance="?android:attr/textAppearanceLargeInverse"
+            android:background="@drawable/bg_edittext"
+            android:typeface="monospace" 
+            />
+
+	<View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray" /> -->
+
+
+</LinearLayout>

@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.st.stchat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mybgc"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        layout="@layout/common_title" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#F0ECE0" >
+    </View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_personInfo_head"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="@drawable/ll_selector"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingBottom="4dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="4dp"
+                android:paddingTop="4dp"
+                android:text="@string/_my_head"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <com.st.stchat.widget.CircularImageView
+            android:id="@+id/iv_personInfo_head"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1.5"
+            android:scaleType="centerInside"
+            android:src="@drawable/default_nor_man"
+            app:civ_border="true"
+            app:civ_border_color="#23D5E3"
+            app:civ_border_width="2dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_personInfo_name"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@drawable/ll_selector"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:paddingBottom="4dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp"
+            android:scaleType="centerInside"
+            android:text="@string/_my_honey_name" />
+
+        <TextView
+            android:id="@+id/tv_personInfo_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="17dp"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:text="@string/juwei"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+<View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="#F0ECE0" >
+            </View>
+
+    <LinearLayout
+        android:id="@+id/ll_personInfo_account"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@drawable/ll_selector"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:paddingBottom="4dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp"
+            android:scaleType="centerInside"
+            android:text="@string/st_number" />
+
+        <TextView
+            android:id="@+id/tv_personInfo_account"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="17dp"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:text="@string/juwei_divcloud_net"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+<View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="#F0ECE0" >
+            </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@drawable/ll_selector"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:paddingBottom="4dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp"
+            android:scaleType="centerInside"
+            android:text="@string/_my_erweima" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="17dp"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:text="@string/_my_erweima_"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+<View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="#F0ECE0" >
+            </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@drawable/ll_selector"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:paddingBottom="4dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp"
+            android:scaleType="centerInside"
+            android:text="@string/_my_adds" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="17dp"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:text="@string/_wuxixinqu"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+<View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="#F0ECE0" >
+            </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@drawable/ll_selector"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:paddingBottom="4dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp"
+            android:scaleType="centerInside"
+            android:text="@string/_my_number" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="17dp"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:text="@string/_18651577531"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@drawable/ll_selector"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:paddingBottom="4dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp"
+            android:scaleType="centerInside"
+            android:text="@string/_my_sex" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="17dp"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:text="@string/_my_man"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+<View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="#F0ECE0" >
+            </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@drawable/ll_selector"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:paddingBottom="4dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp"
+            android:scaleType="centerInside"
+            android:text="@string/_my_local" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="17dp"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:text="@string/_my_jiangsuwuxi"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+<View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="#F0ECE0" >
+            </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@drawable/ll_selector"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:paddingBottom="4dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp"
+            android:scaleType="centerInside"
+            android:text="@string/_my_gexingqianming" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="17dp"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:text="@string/c2c_copy_to_china"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/newuserlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/contact_list_item_bkg" >
+
+        <com.st.stchat.widget.CircularImageView
+            android:id="@+id/contact_add_user"
+            android:layout_width="42.0dip"
+            android:layout_height="42.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dip"
+            android:src="@drawable/contact_add_user" />
+
+        <TextView
+            android:id="@+id/chatroom_title_flag1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:layout_toRightOf="@+id/contact_add_user"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="@string/recommended_friends"
+            android:textColor="#323232" />
+
+        <TextView
+            android:id="@+id/unread_msg_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dip"
+            android:background="@drawable/reddot"
+            android:gravity="center"
+            android:text="@string/unread_chat_number"
+            android:textColor="@android:color/white"
+            android:textSize="12dip" >
+        </TextView>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#F0ECE0" />
+    
+
+
+    <RelativeLayout
+        android:id="@+id/chatroomlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/contact_list_item_bkg" >
+
+        <com.st.stchat.widget.CircularImageView
+            android:id="@+id/chatromm_image"
+            android:layout_width="42.0dip"
+            android:layout_height="42.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dip"
+            android:src="@drawable/contact_chatroom" />
+
+        <TextView
+            android:id="@+id/chatroom_title_flag2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:layout_toRightOf="@+id/chatromm_image"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="@string/rooms"
+            android:textColor="#323232" />
+    </RelativeLayout>
+
+</LinearLayout>

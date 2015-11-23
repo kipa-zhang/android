@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical" xmlns:app="http://schemas.android.com/apk/res/com.st.stchat">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/contact_list_item_bkg"
+        >
+
+        <com.st.stchat.widget.CircularImageView
+            android:id="@+id/room_img"
+            android:layout_width="42.0dip"
+            android:layout_height="42.0dip"
+            android:layout_margin="5dip"
+            android:scaleType="fitCenter"
+            app:civ_border="true"
+            app:civ_border_color="#4EA6DD"
+        	app:civ_border_width="2dp"
+            android:src="@drawable/contact_chatroom" />
+
+        <TextView
+            android:id="@+id/chat_room_name"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:text="@string/chat_room_name" 
+            />
+        
+    </LinearLayout>
+
+</LinearLayout>

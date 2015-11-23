@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:listViewAttr="http://schemas.android.com/apk/res/com.st.stchat"
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent" 
+    android:orientation="vertical" 
+    android:background="@color/mybgc">
+   <include
+        android:layout_width="match_parent"
+       	android:layout_height="54dp"
+        layout="@layout/common_title" />
+         <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#F0ECE0" >
+    </View>
+     <com.st.stchat.view.DropDownListView
+        android:id="@+id/chat_room_list"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="26"
+        listViewAttr:isOnBottomStyle="true"
+        listViewAttr:isAutoLoadOnBottom="true"
+   		 />
+     
+     <com.st.stchat.view.LoadingView
+        android:id="@+id/loadingView_chatroomlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</LinearLayout>

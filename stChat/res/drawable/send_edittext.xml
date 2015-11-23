@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 唯一提供给singlechat使用的布局style -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <solid android:color="#EBEBEB" >
+    </solid>
+
+    <padding
+        android:bottom="1dp"
+        android:left="10dp"
+        android:right="10dp"
+        android:top="3dp" >
+    </padding>
+
+    <corners android:radius="9dp" >
+    </corners>
+
+</shape>
