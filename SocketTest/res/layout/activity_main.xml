@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDEFE3"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sockettest" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="@string/socket_server_"
+            android:textSize="20sp" 
+            android:gravity="end"/>
+        
+        <EditText 
+            android:id="@+id/ip_config"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="5"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:maxLines="1"
+            android:digits="1234567890."
+            android:ems="10"
+            android:maxLength="15"
+            android:hint="@string/socket_server_ip"
+            android:padding="5dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="@string/port_"
+            android:textSize="20sp" 
+            android:gravity="end"/>
+        
+        <EditText 
+            android:id="@+id/port_config"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="6"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:maxLines="1"
+            android:digits="1234567890."
+            android:ems="10"
+            android:maxLength="15"
+            android:hint="@string/port"
+            android:padding="5dp"
+            />
+    </LinearLayout>
+    <Button 
+        android:id="@+id/save"
+        android:text="@string/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
